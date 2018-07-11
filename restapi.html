@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RESTFULL ROUTE</title>
+    <style media="screen">
+      body {
+        background:lightpink
+      }
+      table {
+        background:lightblue
+      }
+      .main1 {
+        background:lightblue
+      }
+    </style>
+  </head>
+
+  <body align=center>
+    <div class="">
+      <div class="main1">
+      <div class="">
+        <h1>RESTFULL Routes</h1>
+      <strong>  <p>A table of all 7 RESTFULL routes</p></strong>
+      </div>
+      <p>the route are given example for</p>
+      <strong>blog</strong><br>
+    </div>
+      <div class="main1">
+      <table border = 1 align=center >
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Path</td>
+            <td>HTTP Verb</td>
+            <td>Purpose</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Index</td>
+            <td>/blog</td>
+            <td>GET</td>
+            <td>List of all blog</td>
+          </tr>
+          <tr>
+            <td>New</td>
+            <td>/blog/new</td>
+            <td>GET</td>
+            <td>Show new blog form </td>
+          </tr>
+          <tr>
+            <td>Create</td>
+            <td>/blog</td>
+            <td>POST</td>
+            <td>Create a new Dog, then redirect somewhere</td>
+          </tr>
+          <tr>
+            <td>Show</td>
+            <td>/blog/:id</td>
+            <td>GET</td>
+            <td>Show edit form for one blog information</td>
+          </tr>
+          <tr>
+            <td>Edit</td>
+            <td>/blog/:id/edit</td>
+            <td>GET</td>
+            <td>Show edit form for one blog information </td>
+          </tr>
+          <tr>
+            <td>Update</td>
+            <td>/blog/:id</td>
+            <td>PUT</td>
+            <td>Update a particular blog , then redirect to somewhere</td>
+          </tr>
+          <tr>
+            <td>Destroy</td>
+            <td>/blog/:id</td>
+            <td>DELETE</td>
+            <td>Delete a particular blog, then redirect to some where</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </body>
+</html>

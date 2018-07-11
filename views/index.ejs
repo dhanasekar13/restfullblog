@@ -1,0 +1,23 @@
+<% include ./partials/header %>
+<h1>this is home page</h1>
+<% blogs.forEach(function (data) { %>
+  <div class="content">
+    <h2><%= data.title %></h2>
+    <div class="image">
+    <img src="<%= data.image%>" alt="<%= data.tile %>" >
+  </div>
+    <span> <p><%= data.created.toDateString() %></p> </span>
+    <p><%= data.body.substring(0,50) %> .. more</p>
+    <div class="ui animated fade button">
+      <div class="visible content"> READ MORE
+        <div class="hidden content">
+      <button >
+        <a href="/blog/<%= data._id %>">View full details</a>
+       </button>
+     </div>
+       </div>
+    </div>
+  </div>
+  <hr>
+<% }) %>
+<% include ./partials/footer %>
